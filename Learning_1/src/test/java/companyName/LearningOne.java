@@ -17,11 +17,11 @@ public class LearningOne {
         driver.get("https://www.saucedemo.com/");
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-        //Locating by iD
+        //Locating by ID
         driver.findElement(By.id("user-name")).sendKeys("standard_user");
         //Locating by Name
         driver.findElement(By.name("password")).sendKeys("secret_sauce");
-        //Locating by xpath
+        //Locating by Xpath
         driver.findElement(By.xpath("//input[@id='login-button']")).click();
     }
 }
