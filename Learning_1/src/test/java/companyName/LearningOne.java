@@ -19,9 +19,10 @@ public class LearningOne {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         //Locating by ID
         driver.findElement(By.id("user-name")).sendKeys("standard_user");
-        //Locating by Name
+        //Locating by name
         driver.findElement(By.name("password")).sendKeys("secret_sauce");
-        //Locating by Xpath
+        //Locating by xpath
         driver.findElement(By.xpath("//input[@id='login-button']")).click();
+
     }
 }
